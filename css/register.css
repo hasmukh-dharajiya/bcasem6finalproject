@@ -1,0 +1,1903 @@
+/*
+body
+{
+	font-family:'poppins', sans-serif;
+	font-size: 14px;
+	background:#eee;
+	color: #666;
+	
+} 
+
+.login-container
+{
+	height: 100vh;
+	width: 100%;
+}
+.login-form
+{
+	max-width	: 100%;
+	width: 370px;
+	padding: 15px;
+	margin: auto;
+}
+.form-control{
+	font-size: 15px;
+	min-height: 48px;
+	font-weight: 500;
+}
+.form-control:focus{
+	border-color:#28a745;
+	outline:0;
+	box-shadow:0 0 0 .1rem rgba(0,123,255,.1);
+		}
+.login-form a
+{
+	text-decoration: none;
+	color: #28a745;
+}
+.login-form a:hover{
+	color: #28a745;
+}
+
+
+
+.radio_button{
+	
+}
+*/
+
+body
+{
+	font-family:'poppins', sans-serif;
+	font-size: 14px;
+	background:#eee;
+	color: #666;
+	
+} 
+input[type=radio] {
+    width: 30px;
+    height: 30px;
+}
+
+.login-container
+{
+	height: 100vh;
+	width: 100%;
+	margin-top:100px;
+}
+.login-form
+{
+	max-width	: 100%;
+	width: 470px;
+	padding: 30px;
+	margin: auto;
+}
+.form-control{
+	font-size: 15px;
+	min-height: 48px;
+	font-weight: 500;
+}
+.form-control:focus{
+	border-color:#28a745;
+	outline:0;
+	box-shadow:0 0 0 .1rem rgba(0,123,255,.1)
+	
+	}
+.login-form a
+{
+	text-decoration: none;
+	color: #28a745;
+}
+.login-form a:hover{
+	color: #28a745;
+}
+#footer
+{
+	background-color:#1B4154;
+	margin-bottom:0px;
+	height:100px;
+}
+/*Beginner’s essential
+
+CSS Cheat Sheet
+
+What makes a website unique is it’s styling.
+A must have skill for every web developer.
+
+#################
+
+TABLE OF CONTENTS
+Backgrounds
+
+4
+
+Border
+
+5
+
+Box Model
+
+7
+
+Font
+
+9
+
+Text
+
+10
+
+Column
+
+11
+
+Colors
+
+12
+
+Grid Positioning
+
+12
+
+Template Layout
+
+12
+
+Table
+
+13
+
+Speech
+
+13
+
+List & Markers
+
+15
+
+Animations
+
+16
+
+Transitions
+
+16
+
+UI
+
+17
+
+Pseudo-class
+
+18
+
+Pseudo-element
+
+19
+
+Absolute Measurement
+
+19
+
+Relative Measurement
+
+19
+
+Angles
+
+20
+
+Time
+
+20
+
+Frequency
+
+20
+
+Colors
+
+20
+2 of 29
+
+Selector Types
+
+21
+
+Outline
+
+22
+
+3D / 2D Transform
+
+22
+
+Generated Content
+
+23
+
+Line Box
+
+25
+
+Hyperlink
+
+27
+
+Positioning
+
+27
+
+Ruby
+
+28
+
+Paged Media
+
+28
+
+3 of 29
+
+BACKGROUNDS
+background
+
+background-size
+
+background-image
+
+length
+
+background-position
+
+%
+
+background-size
+
+auto | cover | contain
+
+background-repeat
+background-attachment
+background-origin
+
+background-repeat
+repeat | repeat-x | repeat-y |
+no-repeat
+
+background-clip
+background-color
+
+background-image
+url
+
+background-attachment
+scroll | fixed
+
+background-origin
+
+none
+
+border-box | padding-box |
+content-box
+
+background-position
+
+background-clip
+
+top left | top center | top
+right | center left | center
+center | center right | bottom
+left | bottom center | bottom
+right
+
+length
+%
+border-box | padding-box |
+content-box | no-clip
+
+x-% y-%
+x-pos y-pos
+
+background-color
+color
+transparent
+
+4 of 29
+
+BORDER
+border
+
+border-right-color
+
+border-width
+
+border-color
+
+border-style
+border-color
+
+border-width
+thin | medium | thick | length
+
+border-style
+none | hidden | dotted |
+dashed | solid | double |
+groove | ridge | inset | outset
+
+border-color
+
+border-right-width
+thin | medium | thick | length
+
+border-top-width
+thin | medium | thick | length
+
+border-break
+border-width
+border-style
+color
+close
+
+color
+
+border-bottom-color
+border-bottom
+
+border-color
+
+border-bottom-width
+border-style
+border-color
+
+border-left
+border-left-width
+
+border-bottom-style
+border-style
+
+border-left-color
+border-color
+
+border-style
+
+border-left-width
+
+border-color
+
+thin | medium | thick length
+
+border-left-style
+
+border-right-style
+
+border-style
+
+border-style
+5 of 29
+
+border-top
+
+border-right
+
+border-top-width
+
+border-right-width
+
+border-style
+
+border-style
+
+border-color
+
+border-color
+
+border-top-color
+
+border-radius
+
+border-color
+
+border-radius
+border-top-right-radius
+
+border-top-style
+border-style
+
+box-shadow
+
+border-bottom-right-radius
+border-bottom-left-radius
+border-top-left-radius
+
+inset || [ length, length,
+length, length || <color> ]
+none
+
+border-collapse
+collapse | separate
+
+border-image
+image
+
+border-top-right-radius
+length
+
+border-bottom-right-radius
+length
+
+border-bottom-left-radius
+length
+
+[ number / %
+border-width
+stretch | repeat | round ]
+none
+
+6 of 29
+
+BOX MODEL
+float
+
+margin
+
+left | right | none
+
+margin-top
+margin-right
+
+height
+auto
+length
+%
+
+margin-bottom
+margin-left
+
+margin-bottom
+auto
+
+max-height
+none
+length
+%
+
+length
+%
+
+margin-left
+auto
+
+max-width
+none
+length
+%
+
+height
+%
+
+margin-right
+auto
+
+min-height
+none
+length
+%
+
+height
+%
+
+margin-top
+auto
+
+width
+auto
+%
+
+length
+%
+
+length
+7 of 29
+
+padding
+
+marquee-direction
+
+padding-top
+
+forward | reverse
+
+padding-right
+padding-bottom
+padding-left
+
+padding-bottom
+length
+%
+
+padding-left
+length
+%
+
+padding-right
+length
+%
+
+marquee-loop
+infinite
+integer
+
+marquee-play-count
+infinite
+integer
+
+marquee-speed
+slow | normal | fast
+
+marquee-style
+scroll | slide | alternate
+
+overflow
+visible | hidden | scroll |
+
+padding-top
+length
+%
+
+display
+none | inline | block | inlineblock | list-item |run-in |
+compact | table | inline-table |
+table-row-group | table-headergroup | table-footer-group |
+table-row | table-column-group |
+table-column | table-cell |
+table-caption | ruby | ruby-base
+| ruby-text | ruby-base-group |
+ruby-text-group
+
+auto | no-display | no-content
+overflow-x
+overflow-y
+
+overflow-style
+auto | marquee-line | marqueeblock
+
+overflow-x
+visible | hidden | scroll |
+auto | no-display | no-content
+8 of 29
+
+rotation
+
+visibility
+
+angle
+
+visible | hidden | collapse
+
+rotation-point
+
+clear
+
+position (paired value off-set)
+
+left | right | both | none
+
+FONT
+font
+
+font-style
+
+font-style
+
+normal | italic | oblique |
+inherit
+
+font-variant
+font-weight
+
+font-variant
+
+font-size/line-height
+
+normal | small-caps | inherit
+
+font-family
+caption | icon | menu | messagebox | small-caption | status-bar
+
+font-size-adjust
+none | inherit
+number
+
+font-size
+xx-small | x-small | small |
+medium | large | x-large | xxlarge | smaller | larger |
+inherit
+length
+%
+
+font-family
+normal | wider | narrower |
+ultra-condensed | extracondensed | condensed | semicondensed | semi-expanded |
+ultra-expanded | inherit
+
+font-weight
+normal | bold | bolder | lighter
+| 100 | 200 | 300 | 400 | 500 |
+600 | 700 | 800 | 900 | inherit
+
+9 of 29
+
+TEXT
+
+direction
+
+punctuation-trim
+
+ltr | rtl | inherit
+
+none | [ start | end |
+adjacent ]
+
+hanging-punctuation
+none | [ start | end | endedge ]
+
+letter spacing
+normal
+length
+
+text-align
+start | end | left | right |
+center | justify
+
+text-align-last
+start | end | left | right |
+center | justify
+
+%
+
+text-decoration
+text-outline
+none
+
+none | underline | overline |
+line-thorugh | blink
+
+color
+
+text-shadow
+
+length
+
+none
+
+unicode-bidi
+normal | embed | bidi-override
+
+white-space
+normal | pre | nowrap | pre-wrap
+| pre-line
+
+white-space-collapse
+perserve | collapse | pre-servebreaks | discard
+
+color
+length
+
+word-break
+normal | keep-all | loose |
+break-strict | break-all
+
+word-wrap
+normal
+length
+%
+
+10 of 29
+
+text-emphasis
+
+text-transform
+
+none | [ [ accent | dot | circle
+| disc | [ before | after ]?]
+
+none | capitalize | uppercase |
+lowercase
+
+text-indent
+
+text-wrap
+
+length
+
+normal | unresrricted | none |
+suppress
+
+%
+
+text-justify
+auto | inter-word | interideograph | inter-cluster |
+distribute | kashida | tibetan
+
+word-spacing
+normal
+length
+%
+
+COLUMN
+column-count
+
+column-rule
+
+auto
+
+column-rule-width
+
+number
+
+column-rule-style
+column-rule-color
+
+column-fill
+auto | balance
+
+column-rule-style
+border-style
+
+column-gap
+normal
+
+columns
+
+length
+
+column-width
+column-count
+
+11 of 29
+
+column-rule-width
+
+column-width
+
+thin | medium | thick
+
+auto
+
+length
+
+length
+
+column-span
+1 | all
+
+COLORS
+color
+
+opacity
+
+inherit
+
+inherit
+
+color
+
+number
+
+GRID POSITIONING
+grid-columns
+
+grid-rows
+
+none | inherit
+
+none | inherit
+
+[ length percentage relative
+length ]
+
+[ length percentage relative
+length ]
+
+TEMPLATE LAYOUT
+box-align
+
+box-flex
+
+start | end | center | base
+
+normal
+
+box-direction
+
+box-flex-group
+
+normal | reverse
+
+integer
+12 of 29
+
+box-lines
+
+box-pack
+
+single | multiple
+
+start | end | center | justify
+
+box-orient
+
+box-sizing
+
+horizontal | verticle | inlineaxis | block-axis
+
+content-box | padding-box |
+border-box | margin-box
+
+tab-side
+top | bottom | left | right
+
+TABLE
+border-collapse
+
+border-spacing
+
+collapse | separate
+
+length length
+
+empty-cells
+
+table-layout
+
+show | hide
+
+auto | fixed
+
+caption-side
+top | bottom | left | right
+
+SPEECH
+cue
+
+cue-before
+
+cue-before
+
+url [ silent | x-soft | soft |
+medium | loud | x-loud | none |
+inherit ]
+
+cue-after
+
+number
+%
+13 of 29
+
+mark
+
+pause
+
+mark-before
+
+pause-before
+
+mark-after
+
+pause-after
+
+mark-before
+
+pause-before
+
+string
+
+none | x-weak | weak | medium |
+strong | x-strong | inherit
+
+mark-after
+
+time
+
+string
+
+phonemes
+voice-pitch-range
+
+string
+
+x-low | low | medium | high | xhigh | inherit
+
+voice-duration
+
+number
+
+time
+
+voice-stress
+
+voice-family
+
+strong | moderate | none |
+reduced | inherit
+
+inherit | [ <specific-voice,
+age, generic-voice, number> ]
+
+voice-volume
+
+voice-rate
+
+silent | x-soft | soft | medium
+| loud | x-loud | inherit
+
+x-slow | slow | medium | fast |
+x-fast | inherit
+
+number
+
+%
+
+%
+
+voice-pitch
+cue-after
+url [ silent | x-soft | soft |
+medium | loud | x-loud | none |
+inherit ]
+
+x-low | low | medium | high | xhigh | inherit
+number
+%
+
+number
+%
+14 of 29
+
+caption-side
+
+rest-before
+
+top | bottom | left | right
+
+none | x-weak | weak | medium |
+strong | x-strong | inherit
+
+rest
+
+time
+
+rest-before
+rest-after
+
+rest-after
+none | x-weak | weak | medium |
+strong | x-strong | inherit
+time
+
+speak
+none | normal | spell-out |
+digits | literal-punctuation |
+no-punctuation | inherit-number
+
+LIST & MARKERS
+list-style
+
+list-style-type
+
+list-style-type
+
+none | asterisks | box | check |
+circle | diamond | disc | hyphen
+| square | decimal | decimalleading-zero | lower-roman |
+upper-roman | lower-alpha |
+upper-alpha | lower-greek |
+lower-latin | upper-latin |
+hebrew | armenian | georgian |
+cjk-ideographic | hiragana |
+katakana | hiragana-iroha |
+katakana-iroha | footnotes
+
+list-style-position
+list-style-image
+
+list-style-image
+none
+url
+
+marker-offset
+auto
+length
+
+15 of 29
+
+ANIMATIONS
+animations
+
+animation-timing-function
+
+animation-name
+
+ease | linear | ease-in | easeout | ease-in-out | cubic-Bezier
+(number, number, number, number)
+
+animation-duration
+animation-timing-function
+animation-delay
+animation-iteration-count
+animation-direction
+
+animation-name
+none | IDENT
+
+animation-duration
+time
+
+animation-delay
+time
+
+animation-iteration-count
+inherit
+number
+
+animation-direction
+normal | alternate
+
+animation-play-state
+running | paused
+
+TRANSITIONS
+transitions
+
+transitions-duration
+
+transitions-property
+
+time
+
+transitions-duration
+transitions-timing-function
+transitions-delay
+
+transitions-property
+none | all
+
+transitions-delay
+time
+16 of 29
+
+transition-timing-function
+ease | linear | ease-in | ease-out | ease-in-out | cubicBezier( number, number, number, number)
+
+UI
+appearance
+
+nav-index
+
+normal | inherit | [icon |
+window | desktop | work-space |
+document | tooltip | dialog |
+button | push-button | hyperlink
+| radio-button | checkbox |
+menu-item | tab | menu | menubar
+| pull-down-menu | pop-up-menu |
+list-menu | radio-group |
+checkbox-group | outline-tree |
+range | field | combo-box |
+signature | password]
+
+auto | inherit
+
+cursor
+auto | crosshair | default |
+pointer | move | e-resize | neresize | nw-resize | n-resize |
+se-resize | sw-resize | swresize | s-resize | w-resize |
+text | wait | help
+
+number
+
+nav-up
+auto | inherit <id> [current |
+root | <target-name>
+
+nav-right
+auto | inherit <id> [current |
+root | <target-name>
+
+nav-down
+auto | inherit <id> [current |
+root | <target-name>
+
+url
+
+nav-left
+
+icon
+
+auto | inherit <id> [current |
+root | <target-name>
+
+auto | inherit
+url
+
+resize
+none | both | horizontal |
+vertical | inherit
+
+17 of 29
+
+PSEUDO-CLASS
+:active
+
+an activated element
+
+:focus
+
+an element while the element has focus
+
+:hover
+
+an element when you mouse over it
+
+:link
+
+an unvisited link
+
+:disabled
+
+an element while the element is disabled
+
+:enabled
+
+an element while the element is enabled
+
+:checked
+
+an element that is checked
+
+:selection
+
+an element that is currently selected or highlighted by the user
+
+:lang
+
+allows the author to specify a language to use in a specified element
+
+:nth-child(n)
+
+an element that is the n-th sibling
+
+:nth-last-child(n)
+
+an element that is the n-th sibling counting from the last sibling
+
+:first-child
+
+an element that is the first sibling
+
+:last-child
+
+an element that is the last sibling
+
+:only-child
+
+an element that is the only child
+
+:nth-of-type(n)
+
+an element that is the n-th sibling of its type
+
+:nth-last-oftype(n)
+
+an element that is the n-th sibling of its type counting from the last sibling
+
+:last-of-type
+
+an element that is the last sibling of its type
+
+:first-of-type
+
+an element that is the first sibling of its type
+
+:only-of-type
+
+an element that is the only child of its type
+
+:empty
+
+an element that has no children
+
+:root
+
+root element within the document
+
+:not(x)
+
+an element not represented by the argument ‘x’
+
+:target
+
+a target element as specified by a target in a UR
+
+18 of 29
+
+PSEUDO-ELEMENT
+::first-letter
+
+Adds special style to the first letter of a text
+
+::first-line
+
+Adds special style to the first line of a text
+
+::before
+
+Inserts some content before an element
+
+::after
+
+Inserts some content after an element
+
+ABSOLUTE MEASUREMENT
+%
+
+percentage
+
+cm
+
+centimeter
+
+in
+
+inch
+
+mm
+
+millimeter
+
+pc
+
+pica (1p = 12 points)
+
+pt
+
+point (1pt = 1/72 inch)
+
+RELATIVE MEASUREMENT
+ch
+
+width of the “0” glyph found in the font for the font size used to render
+
+em
+
+1em = current font size of current element
+
+ex
+
+x-height of the element’s font
+
+gd
+
+the grid defined by ‘layout-grid’
+
+px
+
+pixel of the viewing device
+
+rem
+
+the font size of the root element
+
+vh
+
+the viewport’s height
+
+vw
+
+the viewport's width
+
+vm
+
+viewport’s height or width, whichever is smaller of the two
+
+19 of 29
+
+ANGLES
+deg
+
+degrees
+
+grad
+
+grads
+
+rad
+
+radians
+
+turn
+
+turns
+
+TIME
+ms
+
+milli-seconds
+
+s
+
+seconds
+
+FREQUENCY
+Hz
+
+hertz
+
+kHz
+
+kilo-hertz
+
+COLORS
+color name
+
+red, blue, green, dark green
+
+rgb(x,y,z)
+
+red = rgb(255,0,0)
+
+rgb(x%,y%,z%)
+
+red = rgb(100%,0,0)
+
+rgba(x,y,z,alpha)
+
+red = rgba(255,0,0,0)
+
+#rrggbb
+
+red = #ff0000 (or shorthand - #f00)
+
+hsl(hue, saturation, lightness) red = hsl (0, 100%, 50%)
+flabor
+
+An accent color (typically chosen by the user) to customize the user
+interface of the user agent itself.
+
+currentColor
+
+computer value of the ‘currentColor’ keyword is the computed
+value of the ‘color’ property
+
+20 of 29
+
+SELECTOR TYPES
+Name
+
+Info
+
+Example
+
+Universal
+
+Any element
+
+* { font: 10px Arial; }
+
+Type
+
+Any element of that type
+
+h1 { text-decoration: underline; }
+
+Grouping
+
+Multiple elements of different types
+
+h1, h2, h3 { font-family: Verdana; }
+
+Class
+
+Multiple elements of different types when
+you don’t want to affect all instances of that
+type
+
+.sampleClass { text-decoration:
+underline; }
+
+Id
+
+A single element type when you don’t want
+to affect all instances of that type
+
+#sampleID { text-decoration:
+underline; }
+
+Descendant
+
+An element that is below (in the document
+tree) another element - no matter how
+many levels below
+
+#gallery h1 { text-decoration:
+underline; }
+
+Child
+
+An element that is directly below (in the
+document tree) another element
+
+#title > p { font-weight: bold; }
+
+Adjacent Sibling
+
+All elements that share the same parent and h1 + p { font-style: italic; }
+elements are in the same immediate
+sequence
+
+General Sibling
+
+All elements that share the same parent and h1 ~ p { font-style: italic; }
+elements are in the same sequence (not
+necessarily immediate)
+
+Attribute
+
+An element that matches the attribute listed E[selected] - att whatever the value
+E[att="val"] - att with a specific
+value
+E[rel~="next"] - att with a value is a
+whitespace separated list
+*[lang|="en"] - att value either being
+exactly "val" or beginning
+with "val" immediately followed by "-"
+E[att^="val"] - att value that begins
+with the prefix "val"
+
+21 of 29
+
+OUTLINE
+outline
+
+outline-style
+
+outline-color
+
+none | dotted | dashed | solid |
+double | groove | ridge | inset
+| outset
+
+outline-style
+outline-width
+
+outline-width
+outline-offset
+
+thin | medium | thick
+
+inherit
+
+length
+
+length
+
+3D / 2D TRANSFORM
+backface-visibility
+visible | hidden
+
+transform
+perspective
+none
+number
+
+perspective-origin
+[ [ percentage> | <length> |
+left | center | right ]
+[ <percentage> | <length> | top
+| center | bottom ]? ]
+<length> ] | [ [ [ left | center
+| right ] || [ top | center |
+bottom ] ] <length> ]
+
+none | matrix | matrix3d |
+translate3d | tranlateX |
+translateY | translateZ | scale
+| scale3d | scaleX | scaleY |
+scaleZ | rotate | rotate3d |
+rotateX | rotateY | rotateZ |
+skewX | skewY | skew |
+perspective
+
+transform-origin
+[ [ [ <percentage> | <length> |
+left | center | right ]
+[ <percentage> | <length> | top
+| center | bottom ]? ]
+<length> ] | [ [ [ left | center
+| right ] || [ top | center |
+bottom ] ] <length> ]
+
+22 of 29
+
+transform-style
+flat | preserve-3d
+
+GENERATED CONTENT
+bookmark-label
+
+counter-reset
+
+content
+
+none
+
+attr
+
+identifier number
+
+string
+
+crop
+bookmark-level
+
+auto
+
+none
+
+shape
+
+integer
+
+display
+bookmark-target
+
+normal | none | list-item
+
+self
+url
+attr
+
+border-length
+self
+url
+attr
+
+float-offset
+length length
+
+hyphenate-after
+auto
+integer
+
+counter-increment
+none
+
+content
+normal | none | inhibit
+
+identifier number
+
+url
+
+23 of 29
+
+hyphenate-lines
+
+marks
+
+no-limit
+
+[crop || cross ] | none
+
+integer
+
+move-to
+hyphenate-resource
+
+normal | here
+
+none
+
+identifier
+
+url
+
+page-policy
+hyphens
+
+start | first | last
+
+none | manual | auto
+
+quotes
+image-resolution
+
+none
+
+normal | auto
+
+string string string string
+
+dpi
+
+string-set
+hyphenate-before
+
+identifier
+
+auto
+
+content-list
+
+integer
+
+text-replace
+hyphenate-character
+
+none
+
+auto
+
+[<string> <string>]+
+
+string
+
+24 of 29
+
+LINE BOX
+alignment-adjust
+
+drop-initial-after-align
+
+auto | baseline | before-edge |
+text-before-edge | middle |
+central | after-edge | textafter-edge | ideographic |
+alphabetic | hanging |
+mathematical
+
+central | middle | after-edge |
+text-after-edge | ideographic |
+alphabetic | mathematical
+
+length
+
+drop-initial-before-align
+
+%
+
+caps-height
+
+%
+
+alignment-baseline
+
+alignment-baseline
+baseline | ise-script | beforeedge | text-before-edge | afteredge | text-after-edge | central
+| middle | ideographic |
+alphabetic | hanging |
+mathematical
+
+baseline-shift
+baseline | sub | super
+length
+%
+
+dominant-baseline
+auto | use-script | no-change |
+reset-size | alphabetic |
+hanging | ideographic |
+mathematical | central | middle
+| text-after-edge | text-beforeedge
+
+drop-initial-before-adjust
+before-edge | text-before-edge |
+central | middle | hanging |
+mathematical
+length
+%
+
+drop-initial-value
+initial
+integer
+
+drop-initial-size
+auto
+integer
+%
+line
+
+drop-initial-after-align
+alignment-baseline
+25 of 29
+
+inline-box-align
+
+line-stacking-ruby
+
+initial | last
+
+exclude-ruby | include-ruby
+
+integer
+
+line-stacking-shift
+line-height
+normal
+
+consider-shifts | disregardshifts
+
+number
+
+line-stacking
+
+length
+
+line-stacking-strategy
+
+%
+
+line-stacking-ruby
+
+line-stacking
+
+line-stacking-shift
+
+line-stacking-strategy
+
+text-height
+
+line-stacking-ruby
+
+auto | font-size | text-size |
+max-size
+
+line-stacking-shift
+
+line-stacking-strategy
+inline-line-height | block-lineheight | max-height | gridheight
+
+vertical-align
+Baseline | sub | super | top |
+text-top | middle | bottom |
+text-bottom
+length
+%
+
+26 of 29
+
+HYPERLINK
+target
+
+target-name
+
+target-name
+
+current | root | parent | new |
+modal
+
+target-new
+target-position
+
+string
+
+target-new
+window | tab | none
+
+target-position
+above | behind | front | back
+
+POSITIONING
+bottom
+
+top
+
+auto
+
+auto
+
+%
+
+%
+
+length
+
+length
+
+right
+
+left
+
+auto
+
+auto
+
+%
+
+%
+
+length
+
+length
+
+clip
+
+z-index
+
+shape
+
+auto
+
+auto
+
+Number
+27 of 29
+
+position
+static | relative | absolute | fixed
+
+RUBY
+ruby-align
+
+ruby-position
+
+auto | start | left | center |
+end | right | distribute-letter
+| distribute-space | line-edge
+
+before | after | right | inline
+
+ruby-overhang
+
+attr(x) | none
+
+ruby-span
+
+auto | start | end | none
+
+PAGED MEDIA
+fit
+
+page
+
+fill | hidden | meet | slice
+
+auto
+identifier
+
+fit-position
+[top | center | bottom] || [left
+| center | right]
+length
+
+page-break-after
+auto | always | avoid | left |
+right
+
+%
+
+page-break-before
+orphans
+integer
+
+image-orientation
+auto
+
+auto | always | avoid | left |
+right
+
+page-break-inside
+auto | avoid
+
+angle
+28 of 29
+
+size
+
+windows
+
+auto | landscape | portrait
+
+integer
+
+length
+
+29 of 29*/
