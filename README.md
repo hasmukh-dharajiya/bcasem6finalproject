@@ -17,3 +17,8 @@ Web app to Freelance real time Projects,clients and Freelancer.
 
 ![Freelancer Module](https://github.com/hasmukh-dharajiya/bcasem6finalproject/blob/main/Untitled%20design.png)
 
+## Other Screnshort
+
+![Freelancer Module](https://github.com/hasmukh-dharajiya/bcasem6finalproject/blob/main/Untitled%20design.png)
+
+
